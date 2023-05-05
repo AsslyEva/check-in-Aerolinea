@@ -1,0 +1,91 @@
+<mat-sidenav-container tabindex="-2">
+
+    <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z10" >
+      <div class="sidenav-content">
+        <div class="container-sidenav">
+          <div class="content">
+            <div class="title-sidenav">
+              <p>{{title | uppercase}}</p>
+            </div>
+    
+            <div class="wellcome">BIENVENIDO (A)</div>
+    
+            <p class="designation">
+                {{ usuario | uppercase}}
+            </p>
+
+            <img class="avatar"
+            src='assets/img/iconPerfil.svg'
+             />
+
+
+            <mat-accordion>
+              <mat-expansion-panel (opened)="panelOpenState = true"
+                                  (closed)="panelOpenState = false"
+                                  class="sunarp-module"
+                                  >
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <!-- <mat-icon>list</mat-icon>  -->
+                    <span>SELECCIONA ROL</span> 
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                  <mat-option [routerLink]="['/abogado']" [routerLinkActive]="['active']">
+                            <div class="decorador one"></div>
+                            <a  style="color: #464141; font-size: 12px;">Abogado</a>
+                        </mat-option>
+                        
+                        <mat-option [routerLink]="['/agente']" [routerLinkActive]="['active']">
+                          <div class="decorador one"> </div>
+                          <a style="color: #464141; font-size: 12px;">Agente</a>
+                        </mat-option>
+                        
+                        <!-- <mat-option [routerLink]="['/coordinador']" [routerLinkActive]="['active']">
+                          <div class="decorador one"></div>
+                          <a style="color: #464141; font-size: 12px;">Registrador</a>
+                        </mat-option>
+                        
+                        <mat-option [routerLink]="['/digitador']" [routerLinkActive]="['active']">
+                          <div class="decorador one"></div>        
+                          <a style="color: #464141; font-size: 12px;">Administrador</a>             
+                        </mat-option> -->
+                </mat-expansion-panel>
+            </mat-accordion>
+    
+  
+  
+            <div class="container-button">
+              <button mat-flat-button
+                      (click)="logout()"
+                      matTooltip="Cerrar sesion"
+                      class="button-logout">
+                <mat-icon class="icon">logout</mat-icon>&nbsp;SALIR
+              </button>
+            </div>
+  
+            <div class="version">
+              <span>{{version}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+    </mat-sidenav>
+  
+    <mat-sidenav-content>
+    <button
+            mat-icon-button
+            *ngIf="sidenav.mode === 'over'"
+            (click)="sidenav.toggle()"
+            >
+    <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
+    <mat-icon *ngIf="sidenav.opened"> menu </mat-icon>
+    </button>
+    <div>
+      <router-outlet>
+      </router-outlet>
+    </div>
+    </mat-sidenav-content>
+  
+  </mat-sidenav-container>
