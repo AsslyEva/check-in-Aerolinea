@@ -1,4 +1,248 @@
+// /* You can add global styles to this file, and also import other style files */
+
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// // /* Importing Bootstrap SCSS file. */
+// // @import '~bootstrap/scss/bootstrap';
+
+// // /* Importing Bootstrap SCSS file. */
+// // @import '~bootstrap/scss/bootstrap';
+
+
 /* You can add global styles to this file, and also import other style files */
+@import 'assets/sass/general.scss';
+// @import "~ng-pick-datetime/assets/style/picker.min.css";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+html{
+    margin-top: 0 !important;
+}
+::ng-deep * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::ng-deep html {
+    margin: 0 !important;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+p {
+  margin: 0;
+}
+
+ /* ANIMACIONES */
+
+ @keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+ /* END ANIMACIONES */
+
+ .mat-tab-labels {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+ /* STYLES CONTENT */
+
+.content-inicio {
+  height: calc(100vh - 4rem);
+  // height: 100vh;
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  overflow: auto;
+  background-attachment: fixed;
+  background-image: url(\\assets\\img\\fondo.svg);
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  justify-content: flex-start;
+}
+
+.content-inicio-max {
+  height: calc(100vh - 4rem);
+  // height: 100vh;
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  overflow: auto;
+  background-attachment: fixed;
+  background-image: url(\\assets\\img\\fondo2.svg);
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  justify-content: flex-start;
+}
+
+.card-container{
+  gap: 3rem 4rem;
+  margin: 1rem 7rem;
+  background: #ffffffcd;
+  height: 100%;
+}
+ /* END STYLES CONTENT */
+
+
+/* styles Modal */
+.dialog-container{
+  background-attachment: fixed;
+  // background-image: url(\\assets\\img\\fondo_menu.svg);
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.mat-dialog-container {
+  padding: 0 !important;
+}
+
+.swal2-container.swal2-center>.swal2-popup {
+  border-radius: 7rem;
+}
+.content-modal{
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+}
+.form-modal{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: stretch;
+  // gap: 0.1rem;
+}
+.form-modal{
+  .mat-form-field-appearance-outline .mat-form-field-infix {
+      padding: 0 !important;
+  }
+}
+
+.option-modal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0.5rem 0;
+}
+
+.cerrar-modal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  button{
+      width: 15rem;
+  }
+} 
+/* end Modal */
+
+
+
+
+
+//Responsive logos, content y title
+@media (max-width:2350px){
+
+  *{
+    font-size: 13px;
+  }
+}
+
+@media (max-width:1920px){
+
+  *{
+    font-size: 12px;
+  }
+}
+
+
+
+@media (max-width:1720px){
+  *{
+    font-size: 11px;
+  }
+}
+
+@media (max-width:1400px){
+  *{
+    font-size: 10px;
+  }
+}
+
+
+@media (max-width:1350px){
+
+  *{
+    font-size: 10px;
+  }
+}
+
+@media (max-width:1250px){
+  *{
+    font-size: 10px;
+  }
+}
+
+@media (max-width:900px){
+  *{
+    font-size: 10px;
+  }
+}
+
+@media (max-width:730px){
+  *{
+    font-size: 10px;
+  }
+
+}
+
+@media (max-width:600px){
+
+  *{
+    font-size: 9px;
+  }
+
+}
+
+@media (max-width:420px){
+
+  *{
+    font-size: 9px;
+  }
+
+}
+
+
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

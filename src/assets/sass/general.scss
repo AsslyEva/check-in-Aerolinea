@@ -74,60 +74,38 @@ $ff-gotham-book: 'Gotham-Book', sans-serif;
 $ff-minionPro-regular: 'MinionPro-Regular', sans-serif;
 $ff-myriadPro-regular: 'MyriadPro-Regular', sans-serif;
 
-/*Variables for institutional colors*/
+/*Variables for institutional aerolineas*/
 
-$sunarp-green: #8EC321;
-$sunarp-red: #EB3219;
-$sunarp-cyan: #00A5A5;
-$sunarp-yellow: #FFAF00;
-$sunarp-gray-dark: #323C37;
-$sunarp-gray-morado: #7758d6;
-$sunarp-gray-light: #d6d6d6;
-$sunarp-white: #ffffff;
-$sunarp-black: #222222;
-$sunarp-green-500: #B0D564;
-$sunarp-green-300: #DDEDBC;
+$aerolinea-green: #8EC321;
+$aerolinea-red: #EB3219;
+$aerolinea-cyan: #00A5A5;
+$aerolinea-yellow: #FFAF00;
+$aerolinea-gray-dark: #323C37;
+$aerolinea-gray-morado: #7758d6;
+$aerolinea-gray-light: #d6d6d6;
+$aerolinea-white: #ffffff;
+$aerolinea-black: #222222;
+$aerolinea-black-500: #4b4d47;
+$aerolinea-black-300: #4d4e4ab5;
 
 /*Variables for font sizes*/
 
-$font-size-extra-small: 12px;
-$font-size-small: 14px;
-$font-size-normal: 16px;
-$font-size-medium: 18px;
-$font-size-large: 20px;
-$font-size-mega: 24px;
-$font-size-ultra: 28px;
-
-
-
-
+$font-size-extra-small: 11px;
+$font-size-small: 12px;
+$font-size-normal: 13px;
+$font-size-medium: 16px;
+$font-size-large: 18px;
+$font-size-mega: 22px;
+$font-size-ultra: 26px;
 
 
 /*Variables for headers*/
 
-$font-size-h1: 24px;
-$font-size-h2: 26px;
-$font-size-h3: 20px;
-$font-size-h4: 18px;
-$font-size-h5: 16px;
-$font-size-h6: 14px;
+$font-size-h1: 40px;
+$font-size-h2: 20px;
+$font-size-h3: 15px;
+$font-size-h4: 12px;
+$font-size-h5: 11px;
+$font-size-h6: 8px;
 
 /*Variables for buttons Dialogs*/
-// .mat-flat-button.mat-accent,
-// .mat-raised-button.mat-accent,
-// .mat-fab.mat-accent,
-// .mat-mini-fab.mat-accent {
-//     background-color: #323C37;
-// }
-
-// .mat-flat-button.mat-primary,
-// .mat-raised-button.mat-primary,
-// .mat-fab.mat-primary,
-// .mat-mini-fab.mat-primary {
-//     background-color: #8EC321;
-// }
-
-// .mat-flat-button.mat-basic, .mat-raised-button.mat-basic, .mat-fab.mat-basic, .mat-mini-fab.mat-basic {
-//     background-color: #323C37;
-//     color: #ffff;
-// }

@@ -37,7 +37,7 @@ export class SystemLayoutComponent implements OnInit{
 
   ngAfterViewInit() {
     this.observer
-      .observe(['(max-width: 900px)'])
+      .observe(['(max-width: 10000px)'])
       .subscribe((res) => {
         if (res.matches) {
           this.sidenav.mode = 'over';

@@ -1,0 +1,282 @@
+@use 'src/assets/sass/general' as g;
+
+mat-toolbar {
+    background: g.$aerolinea-gray-dark !important;
+    color: white !important;
+    height: 4rem;
+    cursor: default;
+    width: 99.8%;
+    button{
+        position: absolute;
+        left: 2rem;
+    }
+  }
+  
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    // margin-top: 5rem;
+  
+  
+    .title{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      p{
+        margin-bottom: 0;
+        font-family: 'AvenirLTStd-Medium';
+        font-size: 1.7rem;
+        font-weight: bold;
+      }
+    }
+  
+  }
+mat-sidenav {
+  text-align: center;
+//   width: 25rem;
+//   height: 100vh;
+  cursor: default;
+}
+
+
+.mat-icon-button {
+  position: absolute;
+  float: inline-start;
+  background: rgb(224, 224, 224);
+  // margin: 2rem 0rem 0 2rem;
+  z-index: 4;
+  width: 4rem;
+  height: 4rem;
+  mat-icon{
+    font-weight: bold;
+    color: rgb(75, 75, 75);
+  }
+}
+
+
+.sidenav-content{
+    height: calc(100vh - 4rem);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+
+
+  .container-sidenav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    background: g.$aerolinea-black-500;
+
+    .content{
+      color: #ffff;
+
+    }
+    .title-sidenav{
+      font-family: 'Gotham-Medium';
+      width: 100%;
+      position: relative;
+      justify-content: center;
+    //   padding: 0.5rem 1rem;
+      // margin: 1rem 0 1rem 0;
+      p{
+        margin-bottom: 0;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        text-align: center;
+        font-weight: bold;
+      }
+    }
+
+    .wellcome {
+      // position: relative;
+      padding: 1.5rem 0rem 0 0;
+      font-family: 'Gotham-Medium';
+      h4{
+        font-size: 0.1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+    .designation {
+      padding: 0.5rem 1rem;
+      font-size: 1.1rem;
+      width: 100%;
+      font-family: 'AvenirLTStd-Medium';
+      line-height: 2rem;
+    }
+    mat-acordion{
+      width: 100%;
+      position: relative;
+    }
+
+
+  }
+}
+
+.avatar {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 20rem;
+    max-width: 100%;
+    border-radius: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgb(77, 76, 76);
+    margin: 0.4rem 0;
+    padding: 1rem;
+    // margin: 1rem 0 1rem 0;
+    // img{
+    //   // width: 10rem;
+  
+    // }
+  }
+  
+
+.aerolinea-module{
+    font-size: 1.1rem;
+    background-color: #fbfeff;
+    // margin: 2rem 0;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    flex-direction: column;
+    // align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    z-index: 5;
+    mat-icon{
+      color: g.$aerolinea-gray-dark;
+    }
+    mat-panel-title{
+      span{
+        padding: 0.4rem 0 0 1rem;
+        color: g.$aerolinea-gray-dark;
+        text-decoration: none;
+        font-family: g.$ff-avenirLTStd-book;
+      }
+    }
+
+    mat-selection-list{
+      width: 100% !important;
+    }
+    mat-list-option{
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      width: 100% !important;
+    }
+
+    .decorador{
+      position: absolute;
+      width: 10px;
+      height: 20px;
+      left: -5px;
+      top: 10px;
+    }
+    .one{
+      background-color: g.$aerolinea-green;
+    }
+    .two{
+      background: g.$aerolinea-cyan;
+    }
+  }
+
+
+
+
+.container-button{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 7rem 0;
+  .button-logout{
+    width: 90%;
+    border-radius: 0.1rem !important;
+    background-color: g.$aerolinea-cyan;
+    color: #fbfeff;
+  }
+}
+
+.version{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // justify-content: end;
+  span{
+    color: rgb(131, 131, 131);
+    font-size: 1.3rem;
+  }
+}
+
+
+@media (max-width:2000px){
+    // mat-icon{
+    //   // display: none;
+    // }
+    mat-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .logo{
+        img{
+            width: 15rem;
+            // margin: 0rem 0rem 0rem 10rem;
+        }
+      }
+    }
+  
+    .header{
+      .title{
+        p{
+          font-size: 2rem;
+        }    
+      }
+    }
+  }
+  
+  @media (max-width:1200px){
+   .header{
+      .title{
+        p{
+          // width: 70%;
+          line-height: 3rem;
+          font-size: 1.5rem;
+          text-align: center;
+          overflow: hidden;
+          white-space: initial;
+  
+        }
+      }
+    }
+  
+  }
+  
+  @media (max-width:630px){
+    .header{
+      .title{
+        p{
+          // width: 70%;
+          line-height: 1rem;
+          font-size: 1rem;
+  
+  
+        }
+      }
+    }
+  }

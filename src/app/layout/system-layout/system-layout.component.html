@@ -1,58 +1,61 @@
+
+<mat-toolbar class="mat-elevation-z10">
+  <button
+    mat-icon-button
+    *ngIf="sidenav.mode === 'over'"
+    (click)="sidenav.toggle()"
+  >
+    <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
+    <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
+  </button>
+
+
+  <div class="header">
+    <div class="title">
+        <p>{{title | uppercase}}</p>
+    </div>
+  </div>
+
+</mat-toolbar>
+
 <mat-sidenav-container tabindex="-2">
 
     <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z10" >
       <div class="sidenav-content">
         <div class="container-sidenav">
           <div class="content">
-            <div class="title-sidenav">
-              <p>{{title | uppercase}}</p>
-            </div>
-    
             <div class="wellcome">BIENVENIDO (A)</div>
-    
-            <p class="designation">
-                {{ usuario | uppercase}}
-            </p>
 
             <img class="avatar"
-            src='assets/img/iconPerfil.svg'
+            src='assets/img/bsale-white.svg'
              />
-
+    
+            <!-- <p class="designation">
+                {{ usuario | uppercase}}
+            </p> -->
 
             <mat-accordion>
               <mat-expansion-panel (opened)="panelOpenState = true"
                                   (closed)="panelOpenState = false"
-                                  class="sunarp-module"
+                                  class="aerolinea-module"
                                   >
                 <mat-expansion-panel-header>
                   <mat-panel-title>
                     <!-- <mat-icon>list</mat-icon>  -->
-                    <span>SELECCIONA ROL</span> 
+                    <span>SELECCIONAR AVION</span> 
                   </mat-panel-title>
                 </mat-expansion-panel-header>
-                  <mat-option [routerLink]="['/abogado']" [routerLinkActive]="['active']">
+                  <mat-option [routerLink]="['/airMax']" [routerLinkActive]="['active']">
                             <div class="decorador one"></div>
-                            <a  style="color: #464141; font-size: 12px;">Abogado</a>
+                            <a  style="color: #464141; font-size: 12px;">Air Max</a>
                         </mat-option>
                         
-                        <mat-option [routerLink]="['/agente']" [routerLinkActive]="['active']">
-                          <div class="decorador one"> </div>
-                          <a style="color: #464141; font-size: 12px;">Agente</a>
+                        <mat-option [routerLink]="['/airNova']" [routerLinkActive]="['active']">
+                          <div class="decorador two"> </div>
+                          <a style="color: #464141; font-size: 12px;">Air Nova</a>
                         </mat-option>
-                        
-                        <!-- <mat-option [routerLink]="['/coordinador']" [routerLinkActive]="['active']">
-                          <div class="decorador one"></div>
-                          <a style="color: #464141; font-size: 12px;">Registrador</a>
-                        </mat-option>
-                        
-                        <mat-option [routerLink]="['/digitador']" [routerLinkActive]="['active']">
-                          <div class="decorador one"></div>        
-                          <a style="color: #464141; font-size: 12px;">Administrador</a>             
-                        </mat-option> -->
                 </mat-expansion-panel>
             </mat-accordion>
-    
-  
   
             <div class="container-button">
               <button mat-flat-button
@@ -72,20 +75,7 @@
   
   
     </mat-sidenav>
-  
     <mat-sidenav-content>
-    <button
-            mat-icon-button
-            *ngIf="sidenav.mode === 'over'"
-            (click)="sidenav.toggle()"
-            >
-    <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
-    <mat-icon *ngIf="sidenav.opened"> menu </mat-icon>
-    </button>
-    <div>
-      <router-outlet>
-      </router-outlet>
-    </div>
+      <router-outlet></router-outlet>
     </mat-sidenav-content>
-  
   </mat-sidenav-container>

@@ -1,1 +1,41 @@
-<p>login works!</p>
+<div class="login-container">
+    <div class="container-login">
+        <div  class="logo-bsale">
+            <img src="assets/img/bsale-logo.svg" alt="">
+        </div>
+        <div class="login-form">
+            <div class="title">
+                <h1 class="h1-aerolinea">{{title | uppercase}}</h1>
+                <h4 class="h5-aerolinea">¡Bienvenido a nuestro sistema de check-in de la aerolínea, querido personal de la compañía!</h4>
+            </div>
+
+            <div class="form-ingresar" >
+                <button 
+                type="button"
+                class="wrap" 
+                (click)="loginMax()">
+                Air - Max
+                </button>
+
+                <button 
+                type="button" 
+                class="wrap" 
+                (click)="loginNova()">
+                Air - Nova
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- <ngx-spinner
+    bdColor = "rgba(14,14,14,0.8)"
+    size = "large"
+    color = "#00A5A5"
+    type = "square-jelly-box"
+    [fullScreen] = "false">
+    <p style="color: white" > Cargando, espere por favor </p>
+</ngx-spinner> -->
+
+
